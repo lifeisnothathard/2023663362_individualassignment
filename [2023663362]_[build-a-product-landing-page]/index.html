@@ -6,134 +6,130 @@
     <title>Quantum Headphones - Experience Sound Beyond Limits</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-gray-100 text-gray-800 antialiased pt-20 md:pt-24"> <header id="header" class="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-700 to-purple-700 text-white p-4 shadow-lg z-50 flex items-center justify-between flex-wrap">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <img id="header-img" src="https://placehold.co/60x60/FFFFFF/000000?text=LOGO" alt="Quantum Headphones Logo" class="h-12 w-12 rounded-full mr-3">
-            <span class="font-semibold text-2xl tracking-tight">Quantum Sound</span>
+<body>
+
+    <header id="header">
+        <div class="header-brand">
+            <img id="header-img" src="https://www.logodesign.net/logo/woman-side-profile-wearing-music-note-headphone-4395ld.png?size=large" alt="Quantum Headphones Logo">
+            <span class="header-title">Quantum Sound</span>
         </div>
-        <nav id="nav-bar" class="w-full block flex-grow md:flex md:items-center md:w-auto">
-            <ul class="text-sm md:flex-grow flex flex-col md:flex-row md:justify-end md:space-x-8 mt-4 md:mt-0">
-                <li><a class="nav-link block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300 transition duration-300 ease-in-out px-3 py-2 rounded-md" href="#features-section">Features</a></li>
-                <li><a class="nav-link block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300 transition duration-300 ease-in-out px-3 py-2 rounded-md" href="#how-it-works-section">How It Works</a></li>
-                <li><a class="nav-link block mt-4 md:inline-block md:mt-0 text-white hover:text-gray-300 transition duration-300 ease-in-out px-3 py-2 rounded-md" href="#pricing-section">Pricing</a></li>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features-section">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works-section">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing-section">Pricing</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-20 px-4 text-center">
-        <h2 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Immerse Yourself in Pure Sound.</h2>
-        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Experience audio like never before with Quantum Headphones. Revolutionary technology for unparalleled clarity and depth.</p>
-        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post" class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-xl">
+    <section class="hero-section">
+        <h2 class="hero-title">Immerse Yourself in Pure Sound.</h2>
+        <p class="hero-description">Experience audio like never before with Quantum Headphones. Revolutionary technology for unparalleled clarity and depth.</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
             <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Enter your email address"
                 required
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-gray-800 mb-4"
             />
             <input
                 type="submit"
                 id="submit"
                 value="Get Early Access"
-                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md cursor-pointer"
             />
         </form>
     </section>
 
-    <section id="features-section" class="py-16 px-4 bg-white">
-        <div class="container mx-auto max-w-5xl">
-            <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Unrivaled Features</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="feature-item flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md text-center">
-                    <svg class="w-16 h-16 text-purple-600 mb-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-3">Quantum Noise Cancellation</h3>
-                    <p class="text-gray-600">Silence the world and focus on your audio with our next-gen noise cancellation technology.</p>
+    <section id="features-section" class="features-section">
+        <div class="container">
+            <h2 class="section-heading">Unrivaled Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <svg class="feature-icon feature-icon-purple" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <h3 class="feature-title">Quantum Noise Cancellation</h3>
+                    <p class="feature-description">Silence the world and focus on your audio with our next-gen noise cancellation technology.</p>
                 </div>
-                <div class="feature-item flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md text-center">
-                    <svg class="w-16 h-16 text-yellow-500 mb-4" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2a1 1 0 100-2h-2zM11 7a1 1 0 100 2h2a1 1 0 100-2h-2zM11 11a1 1 0 100 2h2a1 1 0 100-2h-2zM11 15a1 1 0 100 2h2a1 1 0 100-2h-2zM4 5a2 2 0 00-2 2v6a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2H4z"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-3">Immersive 3D Audio</h3>
-                    <p class="text-gray-600">Experience sound from every direction, bringing your music, movies, and games to life.</p>
+                <div class="feature-item">
+                    <svg class="feature-icon feature-icon-yellow" fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2a1 1 0 100-2h-2zM11 7a1 1 0 100 2h2a1 1 0 100-2h-2zM11 11a1 1 0 100 2h2a1 1 0 100-2h-2zM11 15a1 1 0 100 2h2a1 1 0 100-2h-2zM4 5a2 2 0 00-2 2v6a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2H4z"></path></svg>
+                    <h3 class="feature-title">Immersive 3D Audio</h3>
+                    <p class="feature-description">Experience sound from every direction, bringing your music, movies, and games to life.</p>
                 </div>
-                <div class="feature-item flex flex-col items-center p-6 bg-gray-50 rounded-lg shadow-md text-center">
-                    <svg class="w-16 h-16 text-green-600 mb-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"></path></svg>
-                    <h3 class="text-2xl font-semibold mb-3">All-Day Comfort</h3>
-                    <p class="text-gray-600">Lightweight design and premium materials ensure comfort for hours of listening.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="how-it-works-section" class="py-16 px-4 bg-gray-200 text-center">
-        <h2 class="text-4xl font-bold text-blue-700 mb-12">See Quantum Sound in Action</h2>
-        <div class="video-container max-w-3xl mx-auto rounded-lg shadow-xl overflow-hidden">
-            <iframe
-                id="video"
-                class="w-full h-96 md:h-[500px]"
-                src="https://www.ispot.tv/ad/tfrs/jbl-quantum-series-the-sound-of-victory"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                title="Quantum Headphones Demo Video"
-            ></iframe>
-        </div>
-    </section>
-
-    <section id="pricing-section" class="py-16 px-4 bg-white">
-        <div class="container mx-auto max-w-5xl">
-            <h2 class="text-4xl font-bold text-center text-blue-700 mb-12">Choose Your Quantum Experience</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="pricing-tier flex flex-col items-center p-8 bg-gray-50 rounded-lg shadow-lg border-2 border-gray-200 hover:border-blue-500 transition duration-300 ease-in-out transform hover:scale-105">
-                    <h3 class="text-3xl font-bold text-blue-600 mb-4">Standard</h3>
-                    <p class="text-5xl font-extrabold mb-6">$199</p>
-                    <ul class="text-gray-700 text-lg space-y-3 mb-8 text-left w-full">
-                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Basic Noise Cancellation</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>20-hour Battery Life</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Comfort Earcups</li>
-                    </ul>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">Select Plan</button>
-                </div>
-                <div class="pricing-tier flex flex-col items-center p-8 bg-blue-600 text-white rounded-lg shadow-xl border-2 border-blue-700 transform scale-105 relative z-10">
-                    <span class="absolute -top-3 right-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-md">BEST SELLER</span>
-                    <h3 class="text-3xl font-bold mb-4">Pro</h3>
-                    <p class="text-5xl font-extrabold mb-6">$299</p>
-                    <ul class="text-white text-lg space-y-3 mb-8 text-left w-full">
-                        <li class="flex items-center"><svg class="w-6 h-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Quantum Noise Cancellation</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Immersive 3D Audio</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>30-hour Battery Life</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Premium Comfort Earcups</li>
-                    </ul>
-                    <button class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">Select Plan</button>
-                </div>
-                <div class="pricing-tier flex flex-col items-center p-8 bg-gray-50 rounded-lg shadow-lg border-2 border-gray-200 hover:border-blue-500 transition duration-300 ease-in-out transform hover:scale-105">
-                    <h3 class="text-3xl font-bold text-blue-600 mb-4">Ultimate</h3>
-                    <p class="text-5xl font-extrabold mb-6">$399</p>
-                    <ul class="text-gray-700 text-lg space-y-3 mb-8 text-left w-full">
-                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Adaptive Quantum Noise Cancellation</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>True 3D Spatial Audio</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>40-hour Battery Life + Fast Charge</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Customizable Fit & Materials</li>
-                        <li class="flex items-center"><svg class="w-6 h-6 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Premium Travel Case</li>
-                    </ul>
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">Select Plan</button>
+                <div class="feature-item">
+                    <svg class="feature-icon feature-icon-green" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z"></path></svg>
+                    <h3 class="feature-title">All-Day Comfort</h3>
+                    <p class="feature-description">Lightweight design and premium materials ensure comfort for hours of listening.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-800 text-white py-8 px-4 text-center">
-        <div class="container mx-auto max-w-5xl">
-            <p>© 2023 Quantum Sound. All rights reserved.</p>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a>
-                <a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a>
+    <section id="how-it-works-section" class="how-it-works-section">
+        <div class="container">
+            <h2 class="section-heading">See Quantum Sound in Action</h2>
+            <div class="video-container">
+                <iframe
+                    id="video"
+                    src="https://www.youtube.com/embed/kgjLSmACqeA"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    title="Quantum Headphones Demo Video"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-section" class="pricing-section">
+        <div class="container">
+            <h2 class="section-heading">Choose Your Quantum Experience</h2>
+            <div class="pricing-grid">
+                <div class="pricing-tier">
+                    <h3 class="tier-title">Standard</h3>
+                    <p class="tier-price">$199</p>
+                    <ul class="tier-features">
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Basic Noise Cancellation</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>20-hour Battery Life</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Comfort Earcups</li>
+                    </ul>
+                    <button class="btn">Select Plan</button>
+                </div>
+                <div class="pricing-tier pricing-tier-pro">
+                    <span class="best-seller-badge">BEST SELLER</span>
+                    <h3 class="tier-title">Pro</h3>
+                    <p class="tier-price">$299</p>
+                    <ul class="tier-features">
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-yellow" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Quantum Noise Cancellation</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-yellow" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Immersive 3D Audio</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-yellow" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>30-hour Battery Life</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-yellow" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Premium Comfort Earcups</li>
+                    </ul>
+                    <button class="btn btn-pro">Select Plan</button>
+                </div>
+                <div class="pricing-tier">
+                    <h3 class="tier-title">Ultimate</h3>
+                    <p class="tier-price">$399</p>
+                    <ul class="tier-features">
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Adaptive Quantum Noise Cancellation</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>True 3D Spatial Audio</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>40-hour Battery Life + Fast Charge</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Customizable Fit & Materials</li>
+                        <li class="feature-list-item"><svg class="feature-list-icon icon-green" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Premium Travel Case</li>
+                    </ul>
+                    <button class="btn">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Quantum Sound. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
             </div>
         </div>
     </footer>
