@@ -6,60 +6,55 @@
     <title>JavaScript Documentation</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body>
 
-    <nav id="navbar" class="bg-gray-800 text-white p-4 shadow-lg md:fixed md:top-0 md:left-0 md:h-full md:w-64 md:overflow-y-auto z-20">
-        <header class="text-3xl font-bold mb-6 text-center md:text-left">JS Docs</header>
-        <ul class="space-y-3">
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#What_you_should_already_know">What you should already know</a></li>
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#JavaScript_and_Java">JavaScript and Java</a></li>
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#Hello_world">Hello world</a></li>
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#Variables">Variables</a></li>
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#Data_types">Data types</a></li>
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#Functions">Functions</a></li>
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#Control_flow">Control flow</a></li>
-            <li><a class="nav-link block p-2 rounded-md hover:bg-gray-700 transition duration-200" href="#Conclusion">Conclusion</a></li>
+    <nav id="navbar">
+        <header>JS Docs</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Control_flow">Control flow</a></li>
+            <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
         </ul>
     </nav>
 
-    <main id="main-doc" class="md:ml-64 p-6 md:p-10">
+    <main id="main-doc">
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="Introduction">
-            <header class="text-3xl font-bold text-blue-700 mb-4">Introduction</header>
-            <p class="mb-4">JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of the environment to provide programmatic control over them.</p>
-            <p class="mb-4">JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Within the host environment, JavaScript can be extended to include additional objects; for example, client-side JavaScript provides objects for controlling the browser and its Document Object Model (DOM).</p>
-            <p class="mb-4">This documentation provides a comprehensive overview of JavaScript fundamentals.</p>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of the environment to provide programmatic control over them.</p>
+            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Within the host environment, JavaScript can be extended to include additional objects; for example, client-side JavaScript provides objects for controlling the browser and its Document Object Model (DOM).</p>
+            <p>This documentation provides a comprehensive overview of JavaScript fundamentals.</p>
         </section>
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="What_you_should_already_know">
-            <header class="text-3xl font-bold text-blue-700 mb-4">What you should already know</header>
-            <p class="mb-4">This guide assumes you have the following basic understanding:</p>
-            <ul class="list-disc list-inside space-y-2 mb-4">
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <p>This guide assumes you have the following basic understanding:</p>
+            <ul>
                 <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
                 <li>Good working knowledge of HyperText Markup Language (HTML).</li>
                 <li>Some programming experience, if you want to understand the concepts better.</li>
             </ul>
-            <p class="mb-4">If you are new to programming, consider starting with simpler concepts before diving deep into JavaScript.</p>
+            <p>If you are new to programming, consider starting with simpler concepts before diving deep into JavaScript.</p>
         </section>
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="JavaScript_and_Java">
-            <header class="text-3xl font-bold text-blue-700 mb-4">JavaScript and Java</header>
-            <p class="mb-4">JavaScript and Java are similar in some ways but fundamentally different in others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows Java's expression syntax, naming conventions, and control-flow constructs, which was the reason why it was renamed from LiveScript to JavaScript.</p>
-            <p class="mb-4">In contrast to Java's compile-time system, JavaScript is a dynamic language that supports various programming styles, including object-oriented, imperative, and functional programming.</p>
-            <p class="mb-4">While they share "Java" in their names, they are distinct languages developed independently.</p>
-            <code class="block bg-gray-100 p-4 rounded-md overflow-x-auto text-sm my-4">
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript and Java</header>
+            <p>JavaScript and Java are similar in some ways but fundamentally different in others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows Java's expression syntax, naming conventions, and control-flow constructs, which was the reason why it was renamed from LiveScript to JavaScript.</p>
+            <p>In contrast to Java's compile-time system, JavaScript is a dynamic language that supports various programming styles, including object-oriented, imperative, and functional programming.</p>
+            <p>While they share "Java" in their names, they are distinct languages developed independently.</p>
+            <code>
                 // Example of JavaScript code<br>
                 let message = "Hello from JavaScript!";<br>
                 console.log(message);
             </code>
-            <code class="block bg-gray-100 p-4 rounded-md overflow-x-auto text-sm my-4">
+            <code>
                 // Example of Java code (for comparison)<br>
                 public class MyClass {<br>
                 &nbsp;&nbsp;public static void main(String[] args) {<br>
@@ -69,37 +64,37 @@
             </code>
         </section>
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="Hello_world">
-            <header class="text-3xl font-bold text-blue-700 mb-4">Hello world</header>
-            <p class="mb-4">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-            <code class="block bg-gray-100 p-4 rounded-md overflow-x-auto text-sm my-4">
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+            <code>
                 function greet() {<br>
                 &nbsp;&nbsp;console.log("Hello, world!");<br>
                 }
             </code>
-            <p class="mb-4">Then, press Ctrl+R to see the output in the browser's console.</p>
+            <p>Then, press Ctrl+R to see the output in the browser's console.</p>
         </section>
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="Variables">
-            <header class="text-3xl font-bold text-blue-700 mb-4">Variables</header>
-            <p class="mb-4">You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
-            <p class="mb-4">A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0-9).</p>
-            <ul class="list-disc list-inside space-y-2 mb-4">
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+            <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($). Subsequent characters can also be digits (0-9).</p>
+            <ul>
                 <li>`var`: Declares a variable, optionally initializing it to a value.</li>
                 <li>`let`: Declares a block-scoped local variable, optionally initializing it to a value.</li>
                 <li>`const`: Declares a block-scoped, read-only named constant.</li>
             </ul>
-            <code class="block bg-gray-100 p-4 rounded-md overflow-x-auto text-sm my-4">
+            <code>
                 var x = 42;<br>
                 let y = "Hello";<br>
                 const PI = 3.14159;
             </code>
         </section>
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="Data_types">
-            <header class="text-3xl font-bold text-blue-700 mb-4">Data types</header>
-            <p class="mb-4">The latest ECMAScript standard defines seven data types:</p>
-            <ul class="list-disc list-inside space-y-2 mb-4">
+        <section class="main-section" id="Data_types">
+            <header>Data types</header>
+            <p>The latest ECMAScript standard defines seven data types:</p>
+            <ul>
                 <li>`Number`: e.g., `123`, `3.14`, `-5`.</li>
                 <li>`BigInt`: for arbitrary precision integers.</li>
                 <li>`String`: e.g., `"hello"`, `'world'`.</li>
@@ -108,8 +103,8 @@
                 <li>`undefined`: A top-level property whose value is not defined.</li>
                 <li>`Symbol`: A data type whose instances are unique and immutable.</li>
             </ul>
-            <p class="mb-4">And `Object` for more complex structures.</p>
-            <code class="block bg-gray-100 p-4 rounded-md overflow-x-auto text-sm my-4">
+            <p>And `Object` for more complex structures.</p>
+            <code>
                 let num = 10;<br>
                 let str = "JavaScript";<br>
                 let bool = true;<br>
@@ -117,11 +112,11 @@
             </code>
         </section>
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="Functions">
-            <header class="text-3xl font-bold text-blue-700 mb-4">Functions</header>
-            <p class="mb-4">A function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it.</p>
-            <p class="mb-4">Functions can be defined using `function` keyword, arrow functions, or as methods in objects.</p>
-            <code class="block bg-gray-100 p-4 rounded-md overflow-x-auto text-sm my-4">
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>A function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it.</p>
+            <p>Functions can be defined using `function` keyword, arrow functions, or as methods in objects.</p>
+            <code>
                 // Function declaration<br>
                 function add(a, b) {<br>
                 &nbsp;&nbsp;return a + b;<br>
@@ -131,16 +126,16 @@
             </code>
         </section>
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="Control_flow">
-            <header class="text-3xl font-bold text-blue-700 mb-4">Control flow</header>
-            <p class="mb-4">Control flow statements are used to control the order of execution of statements in a program. Common control flow statements include conditional statements and loops.</p>
-            <ul class="list-disc list-inside space-y-2 mb-4">
+        <section class="main-section" id="Control_flow">
+            <header>Control flow</header>
+            <p>Control flow statements are used to control the order of execution of statements in a program. Common control flow statements include conditional statements and loops.</p>
+            <ul>
                 <li>`if...else`: Executes different blocks of code based on a condition.</li>
                 <li>`switch`: Executes different blocks of code based on multiple possible values of an expression.</li>
                 <li>`for`: Loops through a block of code a number of times.</li>
                 <li>`while`: Loops through a block of code while a specified condition is true.</li>
             </ul>
-            <code class="block bg-gray-100 p-4 rounded-md overflow-x-auto text-sm my-4">
+            <code>
                 if (condition) {<br>
                 &nbsp;&nbsp;// code to execute if condition is true<br>
                 } else {<br>
@@ -152,10 +147,10 @@
             </code>
         </section>
 
-        <section class="main-section bg-white p-6 rounded-lg shadow-md mb-8" id="Conclusion">
-            <header class="text-3xl font-bold text-blue-700 mb-4">Conclusion</header>
-            <p class="mb-4">This documentation has covered the fundamental concepts of JavaScript, from its basic syntax to variables, data types, functions, and control flow. JavaScript is a powerful and versatile language essential for web development and increasingly used in other domains.</p>
-            <p class="mb-4">To continue your learning, explore advanced topics like DOM manipulation, asynchronous JavaScript, frameworks, and Node.js.</p>
+        <section class="main-section" id="Conclusion">
+            <header>Conclusion</header>
+            <p>This documentation has covered the fundamental concepts of JavaScript, from its basic syntax to variables, data types, functions, and control flow. JavaScript is a powerful and versatile language essential for web development and increasingly used in other domains.</p>
+            <p>To continue your learning, explore advanced topics like DOM manipulation, asynchronous JavaScript, frameworks, and Node.js.</p>
         </section>
 
     </main>
