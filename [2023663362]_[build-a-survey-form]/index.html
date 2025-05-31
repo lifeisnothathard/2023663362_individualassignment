@@ -3,49 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>freeCodeCamp Survey Form</title>
+    <title>Developer Survey Form</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-    </style>
+     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-blue-400 to-purple-600 min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-8">
-    <div class="container bg-white bg-opacity-90 p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl max-w-2xl w-full border border-gray-200">
-        <h1 id="title" class="text-4xl sm:text-5xl font-extrabold text-center text-gray-800 mb-4">Developer Survey Form</h1>
-        <p id="description" class="text-lg sm:text-xl text-center text-gray-600 mb-8">
-            Thank you for taking the time to help us improve the platform.
-        </p>
+<body>
+    <div class="page-wrapper">
+        <h1 id="title">Developer Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform.</p>
 
-        <form id="survey-form" class="space-y-6">
+        <form id="survey-form" action="https://www.freecodecamp.com/email-submit" method="post">
             <div class="form-group">
-                <label id="name-label" for="name" class="block text-gray-700 text-lg font-semibold mb-2">Name</label>
+                <label id="name-label" for="name">Name</label>
                 <input
                     type="text"
                     id="name"
                     name="name"
                     placeholder="Enter your name"
                     required
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-gray-800"
                 />
             </div>
 
             <div class="form-group">
-                <label id="email-label" for="email" class="block text-gray-700 text-lg font-semibold mb-2">Email</label>
+                <label id="email-label" for="email">Email</label>
                 <input
                     type="email"
                     id="email"
                     name="email"
                     placeholder="Enter your Email"
                     required
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-gray-800"
                 />
             </div>
 
             <div class="form-group">
-                <label id="number-label" for="number" class="block text-gray-700 text-lg font-semibold mb-2">Age (optional)</label>
+                <label id="number-label" for="number">Age (optional)</label>
                 <input
                     type="number"
                     id="number"
@@ -53,13 +44,12 @@
                     min="1"
                     max="120"
                     placeholder="Age"
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-gray-800"
                 />
             </div>
 
             <div class="form-group">
-                <label for="dropdown" class="block text-gray-700 text-lg font-semibold mb-2">Which option best describes your current role?</label>
-                <select id="dropdown" name="role" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-gray-800 bg-white">
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown" name="role" required>
                     <option disabled selected value>Select current role</option>
                     <option value="student">Student</option>
                     <option value="full-time-job">Full Time Job</option>
@@ -70,64 +60,62 @@
             </div>
 
             <div class="form-group">
-                <label class="block text-gray-700 text-lg font-semibold mb-2">Would you recommend this platform to a friend?</label>
-                <div class="space-y-2">
-                    <label class="flex items-center text-gray-700">
-                        <input type="radio" name="recommend" value="definitely" class="form-radio h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <span class="ml-2 text-base">Definitely</span>
+                <label>Would you recommend this platform to a friend?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="recommend" value="definitely">
+                        <span>Definitely</span>
                     </label>
-                    <label class="flex items-center text-gray-700">
-                        <input type="radio" name="recommend" value="maybe" class="form-radio h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <span class="ml-2 text-base">Maybe</span>
+                    <label>
+                        <input type="radio" name="recommend" value="maybe">
+                        <span>Maybe</span>
                     </label>
-                    <label class="flex items-center text-gray-700">
-                        <input type="radio" name="recommend" value="not-sure" class="form-radio h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <span class="ml-2 text-base">Not sure</span>
-                    </label>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="block text-gray-700 text-lg font-semibold mb-2">What would you like to see improved? (Check all that apply)</label>
-                <div class="space-y-2">
-                    <label class="flex items-center text-gray-700">
-                        <input type="checkbox" name="improve" value="front-end-projects" class="form-checkbox h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <span class="ml-2 text-base">Front-end Projects</span>
-                    </label>
-                    <label class="flex items-center text-gray-700">
-                        <input type="checkbox" name="improve" value="back-end-projects" class="form-checkbox h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <span class="ml-2 text-base">Back-end Projects</span>
-                    </label>
-                    <label class="flex items-center text-gray-700">
-                        <input type="checkbox" name="improve" value="data-visualization" class="form-checkbox h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <span class="ml-2 text-base">Data Visualization</span>
-                    </label>
-                    <label class="flex items-center text-gray-700">
-                        <input type="checkbox" name="improve" value="challenges" class="form-checkbox h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <span class="ml-2 text-base">Challenges</span>
-                    </label>
-                    <label class="flex items-center text-gray-700">
-                        <input type="checkbox" name="improve" value="community" class="form-checkbox h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <span class="ml-2 text-base">Community</span>
+                    <label>
+                        <input type="radio" name="recommend" value="not-sure">
+                        <span>Not sure</span>
                     </label>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="comments" class="block text-gray-700 text-lg font-semibold mb-2">Any additional comments or suggestions?</label>
+                <label>What would you like to see improved? (Check all that apply)</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="improve" value="front-end-projects">
+                        <span>Front-end Projects</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improve" value="back-end-projects">
+                        <span>Back-end Projects</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improve" value="data-visualization">
+                        <span>Data Visualization</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improve" value="challenges">
+                        <span>Challenges</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improve" value="community">
+                        <span>Community</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Any additional comments or suggestions?</label>
                 <textarea
                     id="comments"
                     name="comments"
                     rows="5"
                     placeholder="Enter your comments here..."
-                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 text-gray-800 resize-y"
                 ></textarea>
             </div>
 
             <button
                 type="submit"
                 id="submit"
-                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75"
             >
                 Submit Survey
             </button>
